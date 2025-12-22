@@ -1,12 +1,12 @@
 {
-    "name": "next-starter-ts",
+    "name": "next-app-starter-ts",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
-        "lint": "biome check",
+        "lint": "biome check --write",
         "format": "biome format --write",
         "check-types": "tsc --noEmit"
     },
