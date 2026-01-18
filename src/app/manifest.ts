@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
         name: "Better Auth Next.js Starter",
         short_name: "Better Auth Starter",
         description:
-            "Better Auth Next.js Starter with Postgres, Drizzle, shadcn/ui and Tanstack Query",
+            "Better Auth Next.js Starter with Postgres, Prisma, shadcn/ui and Tanstack Query",
         start_url: "/",
         display: "standalone",
         background_color: "#fff",

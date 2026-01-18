@@ -11,12 +11,11 @@ BETTER_AUTH_SECRET=""
 DATABASE_URL=""
 ```
 
-Then generate your schema and perform migrations with drizzle-kit.
+Then generate your schema and perform migrations with Prisma:
 
 ```bash
-npx @better-auth/cli generate
-npx drizzle-kit generate
-npx drizzle-kit migrate
+npm run prisma:generate
+npm run prisma:migrate
 ```
 
 ## Features:
@@ -29,7 +28,7 @@ npx drizzle-kit migrate
 
 [TailwindCSS](https://tailwindcss.com)
 
-[Drizzle ORM](https://orm.drizzle.team)
+[Prisma ORM](https://prisma.io)
 
 [PostgreSQL](https://postgresql.org)
 

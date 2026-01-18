@@ -1,14 +1,12 @@
 import { betterAuth } from "better-auth"
-import { drizzleAdapter } from "better-auth/adapters/drizzle"
+import { prismaAdapter } from "better-auth/adapters/prisma"
 
-import { db } from "@/database/db"
-import * as schema from "@/database/schema"
+import { prisma } from "@/database/prisma"
 
 export const auth = betterAuth({
-    database: drizzleAdapter(db, {
-        provider: "pg",
-        usePlural: true,
-        schema
+    database: prismaAdapter(prisma, {
+        provider: "postgresql",
+        usePlural: true
     }),
     emailAndPassword: {
         enabled: true
